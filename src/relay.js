@@ -13,6 +13,7 @@ function errorLog(message) {
 }
 
 swig.init({
+    filters: require('./colors.js'),
     autoescape: false,
     root: __dirname
 });
@@ -52,6 +53,7 @@ var ircClient = new irc.Client('irc.freenode.net', config.nick, {
     userName: config.userName,
     realName: config.realName,
     channels: allChannels,
+    stripColors: false,
     floodProtection: true
 });
 ircClient.addListener('error', errorLog);
