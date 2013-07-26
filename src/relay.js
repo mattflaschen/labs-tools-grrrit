@@ -75,7 +75,21 @@ function startRelay() {
 
     function doEcho() {
         redisClient.brpop(conns.redis['queue-key'], 0, function(err, reply) {
-            var message = JSON.parse(reply[1]);
+            var message;
+
+            if(err) {
+                logging.error("Caught error in redisClient.brpop: " + err);
+                doEcho();
+                return;
+            }
+
+            try {
+                message = JSON.parse(reply[1]);
+            } catch (e) {
+                logging.error("Failed to parse as JSON: " + reply[1]);
+                doEcho();
+                return;
+            }
             if(processors[message.type]) {
                 var msg = processors[message.type](message);
 
