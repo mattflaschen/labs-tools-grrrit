@@ -25,7 +25,7 @@ exports['patchset-created'] = function(message) {
         repo: formatRepo(message.change.project),
         branch: filterNonDefault(message.change.branch),
         url: message.change.url
-    }
+    };
     if(ret.user === 'SuchABot') {
         // Special handling for SuchABot
         ret.user = message.patchSet.author.name;
@@ -34,7 +34,7 @@ exports['patchset-created'] = function(message) {
         ret.owner = message.change.owner.name;
     }
     return ret;
-}
+};
 
 exports['draft-published'] = function(message) {
     var ret = {
@@ -44,12 +44,12 @@ exports['draft-published'] = function(message) {
         repo: formatRepo(message.change.project),
         branch: filterNonDefault(message.change.branch),
         url: message.change.url
-    }
+    };
     if(ret.user !== message.change.owner.name) {
         ret.owner = message.change.owner.name;
     }
     return ret;
-}
+};
 
 exports['comment-added'] = function(message) {
     var ret = {
@@ -87,7 +87,7 @@ exports['comment-added'] = function(message) {
         }
     }
     return ret;
-}
+};
 
 // For Merge, Restore and Abandon
 function formatSimpleEvent(type, userProperty) {
@@ -112,7 +112,7 @@ exports['change-merged'] = function(message) {
         ret = undefined;
     }
     return ret;
-}
+};
 
 exports['change-restored'] = formatSimpleEvent('Restored', 'restorer');
 exports['change-abandoned'] = formatSimpleEvent('Abandoned', 'abandoner');

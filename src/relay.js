@@ -19,7 +19,7 @@ swig.init({
 });
 
 logging.add(logging.transports.File, {
-    filename: process.env['HOME'] + '/logs/lolrrit-wm.log',
+    filename: process.env.HOME + '/logs/lolrrit-wm.log',
     json: false
 });
 logging.remove(logging.transports.Console);
@@ -42,7 +42,7 @@ function channelsForRepo(repo) {
         });
     });
     if(!channels.length) {
-        channels = [config['default-channel']]
+        channels = [config['default-channel']];
     }
     return channels;
 }
