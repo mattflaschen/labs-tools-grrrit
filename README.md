@@ -40,6 +40,11 @@ bundled in the repo):
 
 Licensed under WTFPL. See the LICENSE file for more details.
 
+## CREDITS ##
+
+- Yuvi Panda
+- AzaToth
+
 [1]: https://gerrit.wikimedia.org
 [2]: http://tools.wmflabs.org
 [3]: https://github.com/yuvipanda/SuchABot
