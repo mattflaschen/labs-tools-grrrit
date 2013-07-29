@@ -36,6 +36,21 @@ exports['patchset-created'] = function(message) {
     return ret;
 }
 
+exports['draft-published'] = function(message) {
+    var ret = {
+        type: 'PD' + message.patchSet.number,
+        user: message.uploader.name,
+        'message': message.change.subject,
+        repo: formatRepo(message.change.project),
+        branch: filterNonDefault(message.change.branch),
+        url: message.change.url
+    }
+    if(ret.user !== message.change.owner.name) {
+        ret.owner = message.change.owner.name;
+    }
+    return ret;
+}
+
 exports['comment-added'] = function(message) {
     var ret = {
         type: 'CR',
