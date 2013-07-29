@@ -52,6 +52,7 @@ var template = swig.compileFile('template.txt');
 var ircClient = new irc.Client('irc.freenode.net', config.nick, {
     userName: config.userName,
     realName: config.realName,
+    password: config.password,
     channels: allChannels,
     stripColors: false,
     floodProtection: true
