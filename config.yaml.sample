@@ -1,0 +1,11 @@
+nick: grrrit-wm
+userName: lolrrit
+password: <secret>
+realName: GRRRit the Terrible
+default-channel: "#wikimedia-dev"
+blacklist:
+    L10n-bot
+channels:
+    "#wikimedia-labs": [
+        "labs/.*"
+    ]
