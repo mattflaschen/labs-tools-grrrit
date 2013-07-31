@@ -38,7 +38,8 @@ channels:
         "mediawiki/extensions/ValueView",
         "mediawiki/extensions/ValueValidators",
         "mediawiki/extensions/ValueParsers",
-        "mediawiki/extensions/ValueFormatters"
+        "mediawiki/extensions/ValueFormatters",
+        "mediawiki/extensions/WikidataEntitySuggester"
     ]
     "#pywikipediabot": [
         "pywikipediabot.*",
