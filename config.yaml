@@ -28,6 +28,10 @@ channels:
     ]
     "#mediawiki-i18n": [
         "translatewiki.*"
+        "mediawiki/extensions/Translate",
+        "mediawiki/extensions/TranslationNotifications",
+        "mediawiki/extensions/Babel",
+        "mediawiki/extensions/UniversalLanguageSelector"
     ]
     "#wikimedia-wikidata": [
         "mediawiki/extensions/Wikibase.*",
