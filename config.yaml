@@ -27,7 +27,7 @@ channels:
         "operations.*"
     ]
     "#mediawiki-i18n": [
-        "translatewiki.*"
+        "translatewiki.*",
         "mediawiki/extensions/Translate",
         "mediawiki/extensions/TranslationNotifications",
         "mediawiki/extensions/Babel",
