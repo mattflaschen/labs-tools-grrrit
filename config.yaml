@@ -65,9 +65,6 @@ channels:
         "mediawiki/extensions/SolrStore",
         "mediawiki/extensions/SMW.*"
     ]
-    "#mediawiki-feed": [
-        "mediawiki.*"
-    ]
     "#wikimedia-fundraising": [
         "mediawiki/extensions/DonationInterface",
         "mediawiki/extensions/CentralNotice",
