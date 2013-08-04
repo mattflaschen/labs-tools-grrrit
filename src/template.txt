@@ -2,13 +2,13 @@
     {% if approvals -%}
         [{%- for value in approvals -%}
             {%- if value == "1" -%}
-                {{loop.key}}: {{value|color('bold.green')}}{% if not loop.last %} {% endif -%}
+                {{loop.key}}: {{value|color('green')}}{% if not loop.last %} {% endif -%}
             {%- else if value == "2" -%}
-                {{loop.key}}: {{value|color('bold.underline.green')}}{% if not loop.last %} {% endif -%}
+                {{loop.key}}: {{value|color('bold.green')}}{% if not loop.last %} {% endif -%}
             {%- else if value == "-1" -%}
-                {{loop.key}}: {{value|color('bold.red')}}{% if not loop.last %} {% endif -%}
+                {{loop.key}}: {{value|color('red')}}{% if not loop.last %} {% endif -%}
             {%- else -%}
-                {{loop.key}}: {{value|color('bold.underline.red')}}{% if not loop.last %} {% endif -%}
+                {{loop.key}}: {{value|color('bold.red')}}{% if not loop.last %} {% endif -%}
             {%- endif -%}
         {%- endfor -%}]
     {% endif %}
