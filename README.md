@@ -11,14 +11,14 @@ redis queue populated by the stream receiver script that is part of
 ## Running it ##
 
 This is designed to run on the Grid Engine available on Tool Labs as 
-a continuous task. There is a convenience script `run.bash` to start
+a continuous task. There is a convenience script `kick.bash` to start
 the task on the Grid Engine. 
 
 ## Config Changes ##
 
 To add more repo -> channel mappings, please edit `config.yaml`. The
 repo names can be matched using regexps. The tool needs to be restarted
-on SGE for the changes to take effect. Executing `run.bash` will kill
+on SGE for the changes to take effect. Executing `kick.bash` will kill
 the job and start it up again.
 
 ## Logs ##
