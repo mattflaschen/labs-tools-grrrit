@@ -36,15 +36,15 @@ channels:
     ]
     "#wikimedia-wikidata": [
         "mediawiki/extensions/Wikibase.*",
+        "mediawiki/extensions/Wikidata.*",
         "mediawiki/extensions/Diff",
         "mediawiki/extensions/Ask",
+        "mediawiki/extensions/Serialization",
         "mediawiki/extensions/DataTypes",
         "mediawiki/extensions/DataValues",
         "mediawiki/extensions/ValueView",
-        "mediawiki/extensions/ValueValidators",
-        "mediawiki/extensions/ValueParsers",
-        "mediawiki/extensions/ValueFormatters",
-        "mediawiki/extensions/WikidataEntitySuggester"
+        "mediawiki/extensions/CommonDataValues",
+        "mediawiki/extensions/DataValuesInterfaces"
     ]
     "#pywikipediabot": [
         "pywikipediabot.*",
@@ -52,11 +52,12 @@ channels:
     ]
     "#semantic-mediawiki": [
         "mediawiki/extensions/Semantic.*",
+        "mediawiki/extensions/SMW.*",
+        "mediawiki/extensions/Ask",
         "mediawiki/extensions/Validator",
         "mediawiki/extensions/Maps",
         "mediawiki/extensions/RDFIO",
-        "mediawiki/extensions/SolrStore",
-        "mediawiki/extensions/SMW.*"
+        "mediawiki/extensions/SolrStore"
     ]
     "#wikimedia-dev": [
         "mediawiki/extensions/Semantic.*",
