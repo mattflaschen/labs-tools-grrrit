@@ -31,7 +31,7 @@ channels:
         "mediawiki/extensions/Translate",
         "mediawiki/extensions/TranslationNotifications",
         "mediawiki/extensions/Babel",
-        "mediawiki/extensions/UniversalLanguageSelector".
+        "mediawiki/extensions/UniversalLanguageSelector",
         "mediawiki/extensions/CLDR"
     ]
     "#wikimedia-wikidata": [
