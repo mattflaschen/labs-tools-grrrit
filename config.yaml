@@ -59,14 +59,6 @@ channels:
         "mediawiki/extensions/RDFIO",
         "mediawiki/extensions/SolrStore"
     ]
-    "#wikimedia-dev": [
-        "mediawiki/extensions/Semantic.*",
-        "mediawiki/extensions/Validator",
-        "mediawiki/extensions/Maps",
-        "mediawiki/extensions/RDFIO",
-        "mediawiki/extensions/SolrStore",
-        "mediawiki/extensions/SMW.*"
-    ]
     "#wikimedia-fundraising": [
         "mediawiki/extensions/DonationInterface",
         "mediawiki/extensions/CentralNotice",
