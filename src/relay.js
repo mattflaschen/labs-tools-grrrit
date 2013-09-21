@@ -49,7 +49,7 @@ function channelsForRepo(repo) {
 
 var template = swig.compileFile('template.txt');
 
-var ircClient = new irc.Client('irc.freenode.net', config.nick, {
+var ircClient = new irc.Client(config.server, config.nick, {
     userName: config.userName,
     realName: config.realName,
     password: config.password,
