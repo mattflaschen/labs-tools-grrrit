@@ -8,4 +8,4 @@ blacklist:
 channels:
     "#wikimedia-labs": [
         "labs/.*"
-    ]
+	    ]

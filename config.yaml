@@ -12,18 +12,18 @@ channels:
         "mediawiki/extensions/Babel",
         "mediawiki/extensions/UniversalLanguageSelector",
         "mediawiki/extensions/CLDR"
-    ]
+        ]
     "#mediawiki-parsoid": [
         "mediawiki/extensions/Parsoid"
-    ]
+        ]
     "#mediawiki-visualeditor": [
         "mediawiki/extensions/VisualEditor",
         "mediawiki/extensions/TemplateData"
-    ]
+        ]
     "#pywikipediabot": [
         "pywikipediabot.*",
         "pywikibot.*"
-    ]
+        ]
     "#semantic-mediawiki": [
         "mediawiki/extensions/Semantic.*",
         "mediawiki/extensions/SMW.*",
@@ -32,10 +32,10 @@ channels:
         "mediawiki/extensions/Maps",
         "mediawiki/extensions/RDFIO",
         "mediawiki/extensions/SolrStore"
-    ]
+        ]
     "#wikimedia-analytics": [
         "analytics/.*"
-    ]
+        ]
     "#wikimedia-fundraising": [
         "mediawiki/extensions/DonationInterface",
         "mediawiki/extensions/CentralNotice",
@@ -45,18 +45,18 @@ channels:
         "mediawiki/extensions/FundraiserLandingPage",
         "mediawiki/extensions/FundraiserStatistics",
         "wikimedia/fundraising/.*"
-    ]
+        ]
     "#wikimedia-labs": [
         "labs/.*"
-    ]
+        ]
     "#wikimedia-mobile": [
         "mediawiki/extensions/MobileFrontend",
         "mediawiki/extensions/ZeroRatedMobileAccess",
         "apps/android.*"
-    ]
+        ]
     "#wikimedia-operations": [
         "operations.*"
-    ]
+        ]
     "#wikimedia-wikidata": [
         "mediawiki/extensions/Wikibase.*",
         "mediawiki/extensions/Wikidata.*",
@@ -68,4 +68,4 @@ channels:
         "mediawiki/extensions/ValueView",
         "mediawiki/extensions/CommonDataValues",
         "mediawiki/extensions/DataValuesInterfaces"
-    ]
+        ]
