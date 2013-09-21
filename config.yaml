@@ -5,27 +5,6 @@ default-channel: "#wikimedia-dev"
 blacklist:
     L10n-bot
 channels:
-    "#wikimedia-mobile": [
-        "mediawiki/extensions/MobileFrontend",
-        "mediawiki/extensions/ZeroRatedMobileAccess",
-        "apps/android.*"
-    ]
-    "#mediawiki-parsoid": [
-        "mediawiki/extensions/Parsoid"
-    ]
-    "#mediawiki-visualeditor": [
-        "mediawiki/extensions/VisualEditor",
-        "mediawiki/extensions/TemplateData"
-    ]
-    "#wikimedia-analytics": [
-        "analytics/.*"
-    ]
-    "#wikimedia-labs": [
-        "labs/.*"
-    ]
-    "#wikimedia-operations": [
-        "operations.*"
-    ]
     "#mediawiki-i18n": [
         "translatewiki.*",
         "mediawiki/extensions/Translate",
@@ -34,17 +13,12 @@ channels:
         "mediawiki/extensions/UniversalLanguageSelector",
         "mediawiki/extensions/CLDR"
     ]
-    "#wikimedia-wikidata": [
-        "mediawiki/extensions/Wikibase.*",
-        "mediawiki/extensions/Wikidata.*",
-        "mediawiki/extensions/Diff",
-        "mediawiki/extensions/Ask",
-        "mediawiki/extensions/Serialization",
-        "mediawiki/extensions/DataTypes",
-        "mediawiki/extensions/DataValues",
-        "mediawiki/extensions/ValueView",
-        "mediawiki/extensions/CommonDataValues",
-        "mediawiki/extensions/DataValuesInterfaces"
+    "#mediawiki-parsoid": [
+        "mediawiki/extensions/Parsoid"
+    ]
+    "#mediawiki-visualeditor": [
+        "mediawiki/extensions/VisualEditor",
+        "mediawiki/extensions/TemplateData"
     ]
     "#pywikipediabot": [
         "pywikipediabot.*",
@@ -59,6 +33,9 @@ channels:
         "mediawiki/extensions/RDFIO",
         "mediawiki/extensions/SolrStore"
     ]
+    "#wikimedia-analytics": [
+        "analytics/.*"
+    ]
     "#wikimedia-fundraising": [
         "mediawiki/extensions/DonationInterface",
         "mediawiki/extensions/CentralNotice",
@@ -68,4 +45,27 @@ channels:
         "mediawiki/extensions/FundraiserLandingPage",
         "mediawiki/extensions/FundraiserStatistics",
         "wikimedia/fundraising/.*"
+    ]
+    "#wikimedia-labs": [
+        "labs/.*"
+    ]
+    "#wikimedia-mobile": [
+        "mediawiki/extensions/MobileFrontend",
+        "mediawiki/extensions/ZeroRatedMobileAccess",
+        "apps/android.*"
+    ]
+    "#wikimedia-operations": [
+        "operations.*"
+    ]
+    "#wikimedia-wikidata": [
+        "mediawiki/extensions/Wikibase.*",
+        "mediawiki/extensions/Wikidata.*",
+        "mediawiki/extensions/Diff",
+        "mediawiki/extensions/Ask",
+        "mediawiki/extensions/Serialization",
+        "mediawiki/extensions/DataTypes",
+        "mediawiki/extensions/DataValues",
+        "mediawiki/extensions/ValueView",
+        "mediawiki/extensions/CommonDataValues",
+        "mediawiki/extensions/DataValuesInterfaces"
     ]
