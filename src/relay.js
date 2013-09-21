@@ -6,7 +6,14 @@ var _ = require('underscore'),
     yaml = require('js-yaml'),
     logging = require('winston'),
     config = require('../config.yaml'),
-    conns = require('../connections.yaml');
+    conns = require('../connections.yaml'),
+    // Sane? defaults
+    config_defaults = {
+        nick: 'grrrit',
+        server: 'chat.freenode.net'
+    };
+
+_.defaults(config, config_defaults);
 
 function errorLog(message) {
     logging.error(message);
