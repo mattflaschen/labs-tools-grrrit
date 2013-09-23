@@ -1,4 +1,5 @@
 nick: grrrit-wm
+server: irc.freenode.net
 userName: lolrrit
 realName: GRRRit the Terrible
 default-channel: "#wikimedia-dev"
