@@ -37,6 +37,11 @@ channels:
     "#wikimedia-analytics": [
         "analytics/.*"
         ]
+    "#wikimedia-dev": [
+        # qa and integration are sent to #wikimedia-qa as well
+        "integration/.*",
+        "qa/.*"
+        ]
     "#wikimedia-fundraising": [
         "mediawiki/extensions/DonationInterface",
         "mediawiki/extensions/CentralNotice",
@@ -57,6 +62,11 @@ channels:
         ]
     "#wikimedia-operations": [
         "operations.*"
+        ]
+    "#wikimedia-qa": [
+        # qa and integration are sent to #wikimedia-dev as well
+        "integration/.*",
+        "qa/.*"
         ]
     "#wikimedia-wikidata": [
         "mediawiki/extensions/Wikibase.*",
