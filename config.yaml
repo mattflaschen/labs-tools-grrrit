@@ -40,7 +40,11 @@ channels:
     "#wikimedia-dev": [
         # qa and integration are sent to #wikimedia-qa as well
         "integration/.*",
-        "qa/.*"
+        "qa/.*",
+        # These are sent to #wikimedia-corefeatures too
+        "mediawiki/extensions/Echo",
+        "mediawiki/extensions/Flow",
+        "mediawiki/extensions/PageTriage"
         ]
     "#wikimedia-fundraising": [
         "mediawiki/extensions/DonationInterface",
@@ -51,6 +55,11 @@ channels:
         "mediawiki/extensions/FundraiserLandingPage",
         "mediawiki/extensions/FundraiserStatistics",
         "wikimedia/fundraising/.*"
+        ]
+    "#wikimedia-corefeatures": [
+        "mediawiki/extensions/Echo",
+        "mediawiki/extensions/Flow",
+        "mediawiki/extensions/PageTriage"
         ]
     "#wikimedia-labs": [
         "labs/.*"
