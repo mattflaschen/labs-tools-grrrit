@@ -12,7 +12,8 @@ channels:
         "mediawiki/extensions/TranslationNotifications",
         "mediawiki/extensions/Babel",
         "mediawiki/extensions/UniversalLanguageSelector",
-        "mediawiki/extensions/CLDR"
+        "mediawiki/extensions/CLDR",
+        "mediawiki/extensions/TwnMainPage"
         ]
     "#mediawiki-parsoid": [
         "mediawiki/extensions/Parsoid"
