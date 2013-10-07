@@ -68,7 +68,7 @@ channels:
     "#wikimedia-mobile": [
         "mediawiki/extensions/MobileFrontend",
         "mediawiki/extensions/ZeroRatedMobileAccess",
-        "apps/android.*"
+        "apps/.*"
         ]
     "#wikimedia-operations": [
         "operations.*"
