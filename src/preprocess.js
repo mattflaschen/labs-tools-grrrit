@@ -38,7 +38,7 @@ exports['patchset-created'] = function(message) {
 
 exports['draft-published'] = function(message) {
     var ret = {
-        type: 'PD' + message.patchSet.number,
+        type: 'Draft' + message.patchSet.number,
         user: message.uploader.name,
         'message': message.change.subject,
         repo: formatRepo(message.change.project),
