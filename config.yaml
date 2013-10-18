@@ -39,8 +39,9 @@ channels:
         "analytics/.*"
         ]
     "#wikimedia-dev": [
-        # qa and integration are sent to #wikimedia-qa as well
+        # integration, mediawiki/selenium and qa are sent to #wikimedia-qa as well
         "integration/.*",
+        "mediawiki/selenium",
         "qa/.*",
         # These are sent to #wikimedia-corefeatures too
         "mediawiki/extensions/Echo",
@@ -74,8 +75,9 @@ channels:
         "operations.*"
         ]
     "#wikimedia-qa": [
-        # qa and integration are sent to #wikimedia-dev as well
+        # integration, mediawiki/selenium and qa are sent to #wikimedia-dev as well
         "integration/.*",
+        "mediawiki/selenium",
         "qa/.*"
         ]
     "#wikimedia-wikidata": [
