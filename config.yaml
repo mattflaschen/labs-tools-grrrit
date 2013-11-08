@@ -92,3 +92,7 @@ channels:
         "mediawiki/extensions/CommonDataValues",
         "mediawiki/extensions/DataValuesInterfaces"
         ]
+    "#wikimedia-multimedia": [
+        "mediawiki/extensions/CommonsMetadata.*",
+        "mediawiki/extensions/MultimediaViewer.*"
+        ]
