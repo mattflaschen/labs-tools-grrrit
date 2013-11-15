@@ -60,7 +60,7 @@ exports['comment-added'] = function(message) {
         url: message.change.url,
         owner: message.change.owner.name
     };
-    var inlineCount = message.comment.match(/(?:^|\s)\((\d+) comments\)(?:$|\s)/)[1],
+    var inlineCount = message.comment.match(/(?:^|\s)\((\d+) comments\)(?:$|\s)/),
         comment = message.comment
         // Strip out useless first line
         .replace(/^\s*Patch Set \d+:.*$/m, '')
@@ -73,7 +73,7 @@ exports['comment-added'] = function(message) {
         comment = '"' + comment.substring(0, 138) + '"';
     }
     if(inlineCount) {
-        ret.inlineComments = inlineCount;
+        ret.inlineComments = inlineCount[1];
     }
     ret.message = comment;
     if(message.approvals) {
