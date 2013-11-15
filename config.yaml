@@ -81,16 +81,14 @@ channels:
         "mediawiki/selenium",
         "qa/.*"
         ]
-    "#wikimedia-wikidata": [
+    "#wikidata": [
         "mediawiki/extensions/Wikibase.*",
         "mediawiki/extensions/Wikidata.*",
         "mediawiki/extensions/Diff",
-        "mediawiki/extensions/Ask",
-        "mediawiki/extensions/Serialization",
         "mediawiki/extensions/DataTypes",
         "mediawiki/extensions/DataValues",
         "mediawiki/extensions/ValueView",
-        "mediawiki/extensions/CommonDataValues",
+        "mediawiki/extensions/DataValuesCommon",
         "mediawiki/extensions/DataValuesInterfaces"
         ]
     "#wikimedia-multimedia": [
