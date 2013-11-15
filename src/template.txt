@@ -14,7 +14,7 @@
     {% endif %}
     {{message}} 
     {% if inlineComments -%}
-        ({{inlineComments|color('bold.green')}} comments)
+        ({{inlineComments|color('bold.green')}} comment{% if inlineComments > 1 %}s{% endif %})
     {% endif %}
     [{{repo}}]
     {% if branch %} ({{branch}}) {% endif %}

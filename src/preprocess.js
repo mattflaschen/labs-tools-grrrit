@@ -60,12 +60,12 @@ exports['comment-added'] = function(message) {
         url: message.change.url,
         owner: message.change.owner.name
     };
-    var inlineCount = message.comment.match(/(?:^|\s)\((\d+) comments\)(?:$|\s)/),
+    var inlineCount = message.comment.match(/(?:^|\s)\((\d+) comments?\)(?:$|\s)/),
         comment = message.comment
         // Strip out useless first line
         .replace(/^\s*Patch Set \d+:.*$/m, '')
         // Strip out count of inline comments
-        .replace(/^\s*\(\d+ comments\)$/m, '')
+        .replace(/^\s*\(\d+ comments?\)$/m, '')
         .trim().split("\n")[0].trim();
     if(!comment) {
         comment = message.change.subject.substring(0, 140);
