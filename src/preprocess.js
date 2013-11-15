@@ -60,11 +60,20 @@ exports['comment-added'] = function(message) {
         url: message.change.url,
         owner: message.change.owner.name
     };
-    var comment = message.comment.replace(/^\s*Patch Set \d+:.*$/m, '').trim().split("\n")[0].trim();
+    var inlineCount = message.comment.match(/(?:^|\s)\((\d+) comments\)(?:$|\s)/)[1],
+        comment = message.comment
+        // Strip out useless first line
+        .replace(/^\s*Patch Set \d+:.*$/m, '')
+        // Strip out count of inline comments
+        .replace(/^\s*\(\d+ comments\)$/m, '')
+        .trim().split("\n")[0].trim();
     if(!comment) {
         comment = message.change.subject.substring(0, 140);
     } else {
         comment = '"' + comment.substring(0, 138) + '"';
+    }
+    if(inlineCount) {
+        ret.inlineComments = inlineCount;
     }
     ret.message = comment;
     if(message.approvals) {
