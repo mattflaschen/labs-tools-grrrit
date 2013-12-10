@@ -88,7 +88,8 @@ channels:
         "mediawiki/extensions/DataTypes",
         "mediawiki/extensions/DataValues.*",
         "mediawiki/extensions/DataValueImplementations",
-        "mediawiki/extensions/ValueView"
+        "mediawiki/extensions/ValueView",
+        "mediawiki/extensions/Capiunto"
         ]
     "#wikimedia-multimedia": [
         "mediawiki/extensions/CommonsMetadata.*",
