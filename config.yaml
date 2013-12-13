@@ -17,7 +17,6 @@ channels:
         ]
     "#mediawiki-parsoid": [
         "mediawiki/services/parsoid",
-        "mediawiki/services/parsoid/deploy",
         "mediawiki/extensions/Parsoid"
         ]
     "#mediawiki-visualeditor": [
