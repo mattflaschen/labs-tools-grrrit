@@ -46,7 +46,9 @@ channels:
         # These are sent to #wikimedia-corefeatures too
         "mediawiki/extensions/Echo",
         "mediawiki/extensions/Flow",
-        "mediawiki/extensions/PageTriage"
+        "mediawiki/extensions/PageTriage",
+        # These are sent to #wikimedia-labs too
+        "labs/tools/grrrit"
         ]
     "#wikimedia-fundraising": [
         "mediawiki/extensions/DonationInterface",
