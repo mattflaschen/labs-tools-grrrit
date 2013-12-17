@@ -22,7 +22,8 @@ channels:
     "#mediawiki-visualeditor": [
         "mediawiki/extensions/VisualEditor",
         "mediawiki/extensions/TemplateData",
-        "oojs/.*"
+        "oojs/.*",
+        "VisualEditor/.*"
         ]
     "#pywikipediabot": [
         "pywikipediabot.*",
