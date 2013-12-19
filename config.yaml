@@ -48,6 +48,10 @@ channels:
         "mediawiki/extensions/Echo",
         "mediawiki/extensions/Flow",
         "mediawiki/extensions/PageTriage",
+        # These are sent to #wikimedia-multimedia too
+        "mediawiki/extensions/UploadWizard.*",
+        "mediawiki/extensions/TimedMediaHandler.*",
+        "mediawiki/extensions/PronunciationRecording",
         # These are sent to #wikimedia-labs too
         "labs/tools/grrrit"
         ]
@@ -94,5 +98,8 @@ channels:
         ]
     "#wikimedia-multimedia": [
         "mediawiki/extensions/CommonsMetadata.*",
-        "mediawiki/extensions/MultimediaViewer.*"
+        "mediawiki/extensions/MultimediaViewer.*",
+        "mediawiki/extensions/UploadWizard.*",
+        "mediawiki/extensions/TimedMediaHandler.*",
+        "mediawiki/extensions/PronunciationRecording"
         ]
