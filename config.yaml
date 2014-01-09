@@ -7,13 +7,14 @@ blacklist:
     L10n-bot
 channels:
     "#mediawiki-i18n": [
-        "translatewiki.*",
+        "mediawiki/extensions/Babel",
+        "mediawiki/extensions/CLDR",
+        "mediawiki/extensions/ContentTranslation",
         "mediawiki/extensions/Translate",
         "mediawiki/extensions/TranslationNotifications",
-        "mediawiki/extensions/Babel",
+        "mediawiki/extensions/TwnMainPage",
         "mediawiki/extensions/UniversalLanguageSelector",
-        "mediawiki/extensions/CLDR",
-        "mediawiki/extensions/TwnMainPage"
+        "translatewiki.*"
         ]
     "#mediawiki-parsoid": [
         "mediawiki/services/parsoid",
