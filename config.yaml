@@ -6,17 +6,6 @@ default-channel: "#wikimedia-dev"
 blacklist:
     L10n-bot
 channels:
-    "#mediawiki-feed": [
-        "analytics/.*",
-        "apps/.*",
-        "integration/.*",
-        "labs/.*",
-        "mediawiki/.*",
-        "oojs/.*",
-        "qa/.*",
-        "VisualEditor/.*",
-        "wikimedia/.*"
-    ]
     "#mediawiki-i18n": [
         "mediawiki/extensions/Babel",
         "mediawiki/extensions/CLDR",
@@ -61,12 +50,9 @@ channels:
         # "mediawiki/extensions/Flow",
         # "mediawiki/extensions/PageTriage",
         # These are sent to #wikimedia-multimedia too
-        # "mediawiki/extensions/UploadWizard.*",
-        # "mediawiki/extensions/TimedMediaHandler.*",
-        # "mediawiki/extensions/PronunciationRecording",
-        # And everything also to #mediawiki-feed
-        "mediawiki/.*",
-        "wikimedia/.*",
+        "mediawiki/extensions/UploadWizard.*",
+        "mediawiki/extensions/TimedMediaHandler.*",
+        "mediawiki/extensions/PronunciationRecording",
         # These are sent to #wikimedia-labs too
         "labs/tools/grrrit"
         ]
