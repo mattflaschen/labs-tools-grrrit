@@ -47,9 +47,9 @@ channels:
         # These are sent to #wikimedia-qa too
         "integration/.*",
         # These are sent to #wikimedia-corefeatures too
-        # "mediawiki/extensions/Echo",
-        # "mediawiki/extensions/Flow",
-        # "mediawiki/extensions/PageTriage",
+        "mediawiki/extensions/Echo",
+        "mediawiki/extensions/Flow",
+        "mediawiki/extensions/PageTriage",
         # These are sent to #wikimedia-multimedia too
         "mediawiki/extensions/UploadWizard.*",
         "mediawiki/extensions/TimedMediaHandler.*",
