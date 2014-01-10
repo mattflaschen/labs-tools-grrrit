@@ -37,6 +37,10 @@ if(allChannels.indexOf(config['default-channel']) === -1) {
     allChannels.push(config['default-channel']);
 }
 
+if(typeof config['firehose-channel'] !== "undefined" && allChannels.indexOf(config['firehose-channel']) === -1) {
+    allChannels.push(config['firehose-channel']);
+}
+
 logging.info("joining channels", allChannels);
 
 function channelsForRepo(repo) {
@@ -50,6 +54,9 @@ function channelsForRepo(repo) {
     });
     if(!channels.length) {
         channels = [config['default-channel']];
+    }
+    if(typeof config['firehose-channel'] !== "undefined") {
+        channels.push(config['firehose-channel']);
     }
     return channels;
 }

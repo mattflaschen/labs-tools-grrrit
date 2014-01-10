@@ -3,6 +3,7 @@ server: irc.freenode.net
 userName: lolrrit
 realName: GRRRit the Terrible
 default-channel: "#wikimedia-dev"
+firehose-channel: "#mediawiki-feed"
 blacklist:
     L10n-bot
 channels:
