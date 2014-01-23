@@ -105,3 +105,6 @@ channels:
         "mediawiki/extensions/TimedMediaHandler.*",
         "mediawiki/extensions/PronunciationRecording"
         ]
+    "#wmt": [
+        "labs/tools/WMT"
+        ]
