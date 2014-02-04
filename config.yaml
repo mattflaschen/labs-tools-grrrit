@@ -50,6 +50,7 @@ channels:
         "mediawiki/extensions/Echo",
         "mediawiki/extensions/Flow",
         "mediawiki/extensions/PageTriage",
+        "mediawiki/extensions/Thanks",
         # These are sent to #wikimedia-multimedia too
         "mediawiki/extensions/UploadWizard.*",
         "mediawiki/extensions/TimedMediaHandler.*",
@@ -70,7 +71,8 @@ channels:
     "#wikimedia-corefeatures": [
         "mediawiki/extensions/Echo",
         "mediawiki/extensions/Flow",
-        "mediawiki/extensions/PageTriage"
+        "mediawiki/extensions/PageTriage",
+        "mediawiki/extensions/Thanks"
         ]
     "#wikimedia-labs": [
         "labs/.*"
