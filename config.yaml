@@ -6,6 +6,7 @@ default-channel: "#wikimedia-dev"
 firehose-channel: "#mediawiki-feed"
 blacklist:
     L10n-bot
+    Jenkins-mwext-sync
 channels:
     "#mediawiki-i18n": [
         "mediawiki/extensions/Babel",
