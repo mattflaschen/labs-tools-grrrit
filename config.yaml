@@ -57,7 +57,9 @@ channels:
         "mediawiki/extensions/TimedMediaHandler.*",
         "mediawiki/extensions/PronunciationRecording",
         # These are sent to #wikimedia-labs too
-        "labs/tools/grrrit"
+        "labs/tools/grrrit",
+        # These are sent to #wikipedia-en-ambassadors too
+        "mediawiki/extensions/EducationProgram"
         ]
     "#wikimedia-fundraising": [
         "mediawiki/extensions/DonationInterface",
@@ -107,6 +109,9 @@ channels:
         "mediawiki/extensions/UploadWizard.*",
         "mediawiki/extensions/TimedMediaHandler.*",
         "mediawiki/extensions/PronunciationRecording"
+        ]
+    "#wikipedia-en-ambassadors": [
+        "mediawiki/extensions/EducationProgram"
         ]
     "#wmt": [
         "labs/tools/WMT"
