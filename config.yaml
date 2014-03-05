@@ -86,12 +86,19 @@ channels:
         "apps/.*"
         }
     "#wikimedia-operations": {
-        "operations.*"
+        # Do not post betacluster stuff here
+        "operations.*": {
+            branch: "^(?!betacluster)"
+            }
         }
     "#wikimedia-qa": {
         "mediawiki/selenium",
         "qa/.*",
-        "integration/.*"
+        "integration/.*",
+        # All commits to a betacluster branch goes here
+        ".*": {
+            branch: "betacluster"
+            }
         }
     "#wikidata": {
         "mediawiki/extensions/Wikibase.*",
