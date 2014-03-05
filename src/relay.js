@@ -43,12 +43,19 @@ if(typeof config['firehose-channel'] !== "undefined" && allChannels.indexOf(conf
 
 logging.info("joining channels", allChannels);
 
-function channelsForRepo(repo) {
+function channelsForRepo(repo, branch) {
     var channels = [];
     _.each(config.channels, function(repos, channel) {
-        _.each(repos, function(repo_candidate) {
+        _.each(repos, function(repo_candidate,repo_config) {
             if((new RegExp(repo_candidate)).test(repo)) {
-                channels.push(channel);
+                if(_.has(repo_config, 'branch')) {
+                    // Test if specified regex matches current branch
+                    if((new RegExp(repo_config.branch)).test(branch)) {
+                        channels.push(channel);
+                    }
+                } else {
+                    channels.push(channel);
+                }
             }
         });
     });
@@ -113,7 +120,7 @@ function startRelay() {
                 if(msg) {
                     if(config.blacklist.indexOf(msg.user) === -1) {
                         var relayMsg = template.render(msg).replace(/\s+/gm, ' ');
-                        var channels = channelsForRepo(message.change.project);
+                        var channels = channelsForRepo(message.change.project, message.change.branch);
                         console.log(channels.length);
                         _.each(channels, function(channel) {
                             ircClient.say(channel, relayMsg);

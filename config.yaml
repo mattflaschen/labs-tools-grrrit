@@ -8,7 +8,7 @@ blacklist:
     L10n-bot
     Jenkins-mwext-sync
 channels:
-    "#mediawiki-i18n": [
+    "#mediawiki-i18n": {
         "mediawiki/extensions/Babel",
         "mediawiki/extensions/CLDR",
         "mediawiki/extensions/ContentTranslation",
@@ -17,22 +17,22 @@ channels:
         "mediawiki/extensions/TwnMainPage",
         "mediawiki/extensions/UniversalLanguageSelector",
         "translatewiki.*"
-        ]
-    "#mediawiki-parsoid": [
+        }
+    "#mediawiki-parsoid": {
         "mediawiki/services/parsoid",
         "mediawiki/extensions/Parsoid"
-        ]
-    "#mediawiki-visualeditor": [
+        }
+    "#mediawiki-visualeditor": {
         "mediawiki/extensions/VisualEditor",
         "mediawiki/extensions/TemplateData",
         "oojs/.*",
         "VisualEditor/.*"
-        ]
-    "#pywikipediabot": [
+        }
+    "#pywikipediabot": {
         "pywikipediabot.*",
         "pywikibot.*"
-        ]
-    "#semantic-mediawiki": [
+        }
+    "#semantic-mediawiki": {
         "mediawiki/extensions/Semantic.*",
         "mediawiki/extensions/SMW.*",
         "mediawiki/extensions/Ask",
@@ -40,11 +40,11 @@ channels:
         "mediawiki/extensions/Maps",
         "mediawiki/extensions/RDFIO",
         "mediawiki/extensions/SolrStore"
-        ]
-    "#wikimedia-analytics": [
+        }
+    "#wikimedia-analytics": {
         "analytics/.*"
-        ]
-    "#wikimedia-dev": [
+        }
+    "#wikimedia-dev": {
         # These are sent to #wikimedia-qa too
         "integration/.*",
         # These are sent to #wikimedia-corefeatures too
@@ -60,8 +60,8 @@ channels:
         "labs/tools/grrrit",
         # These are sent to #wikipedia-en-ambassadors too
         "mediawiki/extensions/EducationProgram"
-        ]
-    "#wikimedia-fundraising": [
+        }
+    "#wikimedia-fundraising": {
         "mediawiki/extensions/DonationInterface",
         "mediawiki/extensions/CentralNotice",
         "mediawiki/extensions/ContributionTracking",
@@ -70,30 +70,30 @@ channels:
         "mediawiki/extensions/FundraiserLandingPage",
         "mediawiki/extensions/FundraiserStatistics",
         "wikimedia/fundraising/.*"
-        ]
-    "#wikimedia-corefeatures": [
+        }
+    "#wikimedia-corefeatures": {
         "mediawiki/extensions/Echo",
         "mediawiki/extensions/Flow",
         "mediawiki/extensions/PageTriage",
         "mediawiki/extensions/Thanks"
-        ]
-    "#wikimedia-labs": [
+        }
+    "#wikimedia-labs": {
         "labs/.*"
-        ]
-    "#wikimedia-mobile": [
+        }
+    "#wikimedia-mobile": {
         "mediawiki/extensions/MobileFrontend",
         "mediawiki/extensions/ZeroRatedMobileAccess",
         "apps/.*"
-        ]
-    "#wikimedia-operations": [
+        }
+    "#wikimedia-operations": {
         "operations.*"
-        ]
-    "#wikimedia-qa": [
+        }
+    "#wikimedia-qa": {
         "mediawiki/selenium",
         "qa/.*",
         "integration/.*"
-        ]
-    "#wikidata": [
+        }
+    "#wikidata": {
         "mediawiki/extensions/Wikibase.*",
         "mediawiki/extensions/Wikidata.*",
         "mediawiki/extensions/Diff",
@@ -102,17 +102,17 @@ channels:
         "mediawiki/extensions/DataValueImplementations",
         "mediawiki/extensions/ValueView",
         "mediawiki/extensions/Capiunto"
-        ]
-    "#wikimedia-multimedia": [
+        }
+    "#wikimedia-multimedia": {
         "mediawiki/extensions/CommonsMetadata.*",
         "mediawiki/extensions/MultimediaViewer.*",
         "mediawiki/extensions/UploadWizard.*",
         "mediawiki/extensions/TimedMediaHandler.*",
         "mediawiki/extensions/PronunciationRecording"
-        ]
-    "#wikipedia-en-ambassadors": [
+        }
+    "#wikipedia-en-ambassadors": {
         "mediawiki/extensions/EducationProgram"
-        ]
-    "#wmt": [
+        }
+    "#wmt": {
         "labs/tools/WMT"
-        ]
+        }
