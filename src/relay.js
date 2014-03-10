@@ -46,9 +46,9 @@ logging.info("joining channels", allChannels);
 function channelsForRepo(repo, branch) {
     var channels = [];
     _.each(config.channels, function(repos, channel) {
-        _.each(repos, function(repo_candidate,repo_config) {
+        _.each(repos, function(repo_config, repo_candidate) {
             if((new RegExp(repo_candidate)).test(repo)) {
-                if(_.has(repo_config, 'branch')) {
+                if(!_.isEmpty(repo_config) && _.has(repo_config, 'branch')) {
                     // Test if specified regex matches current branch
                     if((new RegExp(repo_config.branch)).test(branch)) {
                         channels.push(channel);
