@@ -59,6 +59,7 @@ channels:
         # These are sent to #wikimedia-labs too
         "labs/tools/grrrit",
         # These are sent to #wikipedia-en-ambassadors too
+        "mediawiki/extensions/Campaigns",
         "mediawiki/extensions/EducationProgram"
         }
     "#wikimedia-fundraising": {
@@ -118,6 +119,7 @@ channels:
         "mediawiki/extensions/PronunciationRecording"
         }
     "#wikipedia-en-ambassadors": {
+        "mediawiki/extensions/Campaigns",
         "mediawiki/extensions/EducationProgram"
         }
     "#wmt": {
