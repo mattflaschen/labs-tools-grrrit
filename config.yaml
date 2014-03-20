@@ -90,7 +90,8 @@ channels:
         # Do not post betacluster stuff here
         "operations.*": {
             branch: "^(?!betacluster)"
-            }
+            },
+        "wikimedia/bugzilla/modifications"
         }
     "#wikimedia-qa": {
         "mediawiki/selenium",
