@@ -60,7 +60,9 @@ channels:
         "labs/tools/grrrit",
         # These are sent to #wikipedia-en-ambassadors too
         "mediawiki/extensions/Campaigns",
-        "mediawiki/extensions/EducationProgram"
+        "mediawiki/extensions/EducationProgram",
+        # These are sent to #brickimedia too
+        "mediawiki/extensions/MediaWikiChat"
         }
     "#wikimedia-fundraising": {
         "mediawiki/extensions/DonationInterface",
@@ -125,4 +127,7 @@ channels:
         }
     "#wmt": {
         "labs/tools/WMT"
+        }
+    "#brickimedia": {
+        "mediawiki/extensions/MediaWikiChat"
         }
