@@ -17,6 +17,13 @@ function formatRepo(repo) {
     return repo.replace(/^mediawiki\//, '');
 }
 
+function extractBugNumber(commitMsg) {
+    var match = /^Bug:\s*(\d+)\s*$/m.exec(commitMsg);
+    if (match !== null && match[1]) {
+        return match[1];
+    }
+}
+
 exports['patchset-created'] = function(message) {
     var ret = {
         type: 'PS' + message.patchSet.number,
@@ -24,7 +31,8 @@ exports['patchset-created'] = function(message) {
         'message': message.change.subject,
         repo: formatRepo(message.change.project),
         branch: filterNonDefault(message.change.branch),
-        url: message.change.url
+        url: message.change.url,
+        bug: extractBugNumber(message.change.commitMessage)
     };
     if(ret.user === 'SuchABot') {
         // Special handling for SuchABot
@@ -43,7 +51,8 @@ exports['draft-published'] = function(message) {
         'message': message.change.subject,
         repo: formatRepo(message.change.project),
         branch: filterNonDefault(message.change.branch),
-        url: message.change.url
+        url: message.change.url,
+        bug: extractBugNumber(message.change.commitMessage)
     };
     if(ret.user !== message.change.owner.name) {
         ret.owner = message.change.owner.name;
@@ -58,7 +67,8 @@ exports['comment-added'] = function(message) {
         repo: formatRepo(message.change.project),
         branch: filterNonDefault(message.change.branch),
         url: message.change.url,
-        owner: message.change.owner.name
+        owner: message.change.owner.name,
+        bug: extractBugNumber(message.change.commitMessage)
     };
     var inlineCount = message.comment.match(/(?:^|\s)\((\d+) comments?\)(?:$|\s)/),
         comment = message.comment
@@ -108,7 +118,8 @@ function formatSimpleEvent(type, userProperty) {
             repo: formatRepo(message.change.project),
             branch: filterNonDefault(message.change.branch),
             url: message.change.url,
-            owner: message.change.owner.name
+            owner: message.change.owner.name,
+            bug: extractBugNumber(message.change.commitMessage)
         };
     };
 }

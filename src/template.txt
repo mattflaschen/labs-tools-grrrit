@@ -18,6 +18,6 @@
     {% endif %}
     [{{repo}}]
     {% if branch %} ({{branch}}) {% endif %}
-    - {{url|color('teal')}}
+    - {{url|color('teal')}} {% if bug %} (https://bugzilla.wikimedia.org/{{bug}}) {% endif %}
     {% if via %}(via {{via}}) {% endif %}
     {% if owner %}(owner: {{ owner |color('bold.teal')}}){% endif %}
