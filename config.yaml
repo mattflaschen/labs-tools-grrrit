@@ -119,7 +119,8 @@ channels:
         "mediawiki/extensions/MultimediaViewer.*",
         "mediawiki/extensions/UploadWizard.*",
         "mediawiki/extensions/TimedMediaHandler.*",
-        "mediawiki/extensions/PronunciationRecording"
+        "mediawiki/extensions/PronunciationRecording",
+        "analytics/multimedia.*"
         }
     "#wikipedia-en-ambassadors": {
         "mediawiki/extensions/Campaigns",
