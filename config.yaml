@@ -114,6 +114,10 @@ channels:
         "mediawiki/extensions/ValueView",
         "mediawiki/extensions/Capiunto"
         }
+    "#wikimedia-growth": {
+        "mediawiki/extensions/GuidedTour",
+        "mediawiki/extensions/GettingStarted"
+        }
     "#wikimedia-multimedia": {
         "mediawiki/extensions/CommonsMetadata.*",
         "mediawiki/extensions/MultimediaViewer.*",
