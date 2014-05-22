@@ -28,7 +28,7 @@ channels:
         "oojs/.*",
         "VisualEditor/.*"
         }
-    "#pywikipediabot": {
+    "#pywikibot": {
         "pywikipediabot.*",
         "pywikibot.*"
         }
