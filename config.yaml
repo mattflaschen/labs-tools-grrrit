@@ -86,6 +86,8 @@ channels:
     "#wikimedia-mobile": {
         "mediawiki/extensions/MobileFrontend",
         "mediawiki/extensions/ZeroRatedMobileAccess",
+        "mediawiki/extensions/ZeroBanner",
+        "mediawiki/extensions/ZeroPortal",
         "apps/.*"
         }
     "#wikimedia-operations": {
