@@ -100,7 +100,7 @@ channels:
         }
     "#wikimedia-qa": {
         "mediawiki/selenium",
-        "qa/.*",
+        "mediawiki/ruby/.*",
         "integration/.*",
         # All commits to a betacluster branch goes here
         ".*": {
