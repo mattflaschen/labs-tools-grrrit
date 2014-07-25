@@ -97,6 +97,7 @@ channels:
             branch: "^(?!betacluster)"
             },
         "wikimedia/bugzilla/modifications"
+        "wikimedia/bots/jouncebot"
         }
     "#wikimedia-qa": {
         "mediawiki/selenium",
