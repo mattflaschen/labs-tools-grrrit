@@ -96,7 +96,7 @@ channels:
         "operations.*": {
             branch: "^(?!betacluster)"
             },
-        "wikimedia/bugzilla/modifications"
+        "wikimedia/bugzilla/modifications",
         "wikimedia/bots/jouncebot"
         }
     "#wikimedia-qa": {
