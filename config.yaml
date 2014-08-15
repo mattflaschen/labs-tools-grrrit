@@ -103,7 +103,7 @@ channels:
         "mediawiki/selenium",
         "mediawiki/ruby/.*",
         "integration/.*",
-        "mediawiki/tools/codesniffer"
+        "mediawiki/tools/codesniffer",
         # All commits to a betacluster branch goes here
         ".*": {
             branch: "betacluster"
