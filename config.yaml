@@ -111,7 +111,6 @@ channels:
     "#wikidata": {
         "mediawiki/extensions/Wikibase.*",
         "mediawiki/extensions/Wikidata.*",
-        "mediawiki/extensions/Diff",
         "mediawiki/extensions/DataTypes",
         "mediawiki/extensions/DataValues.*",
         "mediawiki/extensions/DataValueImplementations",
