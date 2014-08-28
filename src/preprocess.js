@@ -14,7 +14,7 @@ function filterNonDefault(branch) {
 }
 
 function formatRepo(repo) {
-    return repo.replace(/^mediawiki\//, '');
+    return repo.replace(/^mediawiki\//, '').replace(/^operations\//, '');
 }
 
 function extractBugNumber(commitMsg) {
