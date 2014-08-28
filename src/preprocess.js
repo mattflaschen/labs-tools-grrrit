@@ -103,6 +103,8 @@ exports['comment-added'] = function(message) {
             // Also don't add V+2 from jenkins bot, since it will merge right after
             // Customize to relay other messages that might be useful
             ret = undefined;
+        } else if (ret.approvals && ret.approvals.V === -1) {
+            ret.user = 'jerkins-bot';
         }
     }
     return ret;
