@@ -28,7 +28,7 @@ exports['patchset-created'] = function(message) {
     var ret = {
         type: 'PS' + message.patchSet.number,
         user: message.uploader.name,
-        'message': message.change.subject,
+        message: message.change.subject,
         repo: formatRepo(message.change.project),
         branch: filterNonDefault(message.change.branch),
         url: message.change.url,
@@ -48,7 +48,7 @@ exports['draft-published'] = function(message) {
     var ret = {
         type: 'Draft' + message.patchSet.number,
         user: message.uploader.name,
-        'message': message.change.subject,
+        message: message.change.subject,
         repo: formatRepo(message.change.project),
         branch: filterNonDefault(message.change.branch),
         url: message.change.url,
@@ -116,7 +116,7 @@ function formatSimpleEvent(type, userProperty) {
         return {
             type: type,
             user: message[userProperty].name,
-            'message': message.change.subject,
+            message: message.change.subject,
             repo: formatRepo(message.change.project),
             branch: filterNonDefault(message.change.branch),
             url: message.change.url,
