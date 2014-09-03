@@ -126,6 +126,7 @@ channels:
         "mediawiki/extensions/UploadWizard.*",
         "mediawiki/extensions/TimedMediaHandler.*",
         "mediawiki/extensions/PronunciationRecording",
+        "mediawiki/extensions/ImageMetrics",
         "analytics/multimedia.*"
         }
     "#wikipedia-en-ambassadors": {
