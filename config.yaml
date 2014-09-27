@@ -23,9 +23,15 @@ channels:
         "mediawiki/extensions/Parsoid"
         }
     "#mediawiki-visualeditor": {
-        "mediawiki/extensions/VisualEditor",
+        "mediawiki/extensions/Cite",
+        "mediawiki/extensions/Citoid",
         "mediawiki/extensions/TemplateData",
+        "mediawiki/extensions/VisualEditor",
+        "mediawiki/extensions/WikiEditor",
+        "mediawiki/services/citoid",
+        "mediawiki/services/citoid/deploy",
         "oojs/.*",
+        "unicodejs",
         "VisualEditor/.*"
         }
     "#pywikibot": {
@@ -59,6 +65,10 @@ channels:
         # These are sent to #wikipedia-en-ambassadors too
         "mediawiki/extensions/Campaigns",
         "mediawiki/extensions/EducationProgram",
+        # These are sent to #mediawiki-visualeditor too
+        "mediawiki/extensions/Cite",
+        "mediawiki/extensions/TemplateData",
+        "mediawiki/extensions/WikiEditor",
         # These are sent to #brickimedia too
         "mediawiki/extensions/MediaWikiChat"
         }
