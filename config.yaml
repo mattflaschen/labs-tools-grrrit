@@ -29,7 +29,6 @@ channels:
         "mediawiki/extensions/VisualEditor",
         "mediawiki/extensions/WikiEditor",
         "mediawiki/services/citoid",
-        "mediawiki/services/citoid/deploy",
         "oojs/.*",
         "unicodejs",
         "VisualEditor/.*"
