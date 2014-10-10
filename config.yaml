@@ -92,10 +92,10 @@ channels:
         }
     "#wikimedia-mobile": {
         "mediawiki/extensions/MobileFrontend",
-        "mediawiki/extensions/ZeroRatedMobileAccess",
         "mediawiki/extensions/JsonConfig",
         "mediawiki/extensions/ZeroBanner",
         "mediawiki/extensions/ZeroPortal",
+        "mediawiki/extensions/WikiGrok",
         "apps/.*"
         }
     "#wikimedia-operations": {
