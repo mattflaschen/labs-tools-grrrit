@@ -80,9 +80,6 @@ channels:
         "mediawiki/extensions/FundraiserLandingPage",
         "mediawiki/extensions/FundraiserStatistics",
         "wikimedia/fundraising/.*"
-        "mediawiki/core": {
-            branch: "fundraising/REL1_23"
-            }
         }
     "#wikimedia-corefeatures": {
         "mediawiki/extensions/Echo",
