@@ -71,19 +71,17 @@ channels:
         # These are sent to #brickimedia too
         "mediawiki/extensions/MediaWikiChat"
         }
-    "#wikimedia-fundraising": {
-        "mediawiki/extensions/DonationInterface",
-        "mediawiki/extensions/CentralNotice",
-        "mediawiki/extensions/ContributionTracking",
-        "mediawiki/extensions/ContributionReporting",
-        "mediawiki/extensions/DonationEmailUnsubscribe",
-        "mediawiki/extensions/FundraiserLandingPage",
-        "mediawiki/extensions/FundraiserStatistics",
-        "wikimedia/fundraising/.*",
-        "mediawiki/core": {
-            branch: "^fundraising"
-            }
-        }
+    "#wikimedia-fundraising":
+        mediawiki/extensions/DonationInterface:
+        mediawiki/extensions/CentralNotice:
+        mediawiki/extensions/ContributionTracking:
+        mediawiki/extensions/ContributionReporting:
+        mediawiki/extensions/DonationEmailUnsubscribe:
+        mediawiki/extensions/FundraiserLandingPage:
+        mediawiki/extensions/FundraiserStatistics:
+        wikimedia/fundraising/.*:
+        mediawiki/core:
+            branch: ^fundraising
     "#wikimedia-corefeatures": {
         "mediawiki/extensions/Echo",
         "mediawiki/extensions/Flow",
