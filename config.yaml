@@ -79,7 +79,7 @@ channels:
         "mediawiki/extensions/DonationEmailUnsubscribe",
         "mediawiki/extensions/FundraiserLandingPage",
         "mediawiki/extensions/FundraiserStatistics",
-        "wikimedia/fundraising/.*"
+        "wikimedia/fundraising/.*",
         "mediawiki/core": {
             branch: "^fundraising"
             }
