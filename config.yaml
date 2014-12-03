@@ -50,7 +50,7 @@ channels:
         "analytics/.*"
         }
     "#wikimedia-dev": {
-        # These are sent to #wikimedia-corefeatures too
+        # These are sent to #wikimedia-collaboration too
         "mediawiki/extensions/Echo",
         "mediawiki/extensions/Flow",
         "mediawiki/extensions/PageTriage",
@@ -82,7 +82,7 @@ channels:
         wikimedia/fundraising/.*:
         mediawiki/core:
             branch: ^fundraising
-    "#wikimedia-corefeatures": {
+    "#wikimedia-collaboration": {
         "mediawiki/extensions/Echo",
         "mediawiki/extensions/Flow",
         "mediawiki/extensions/PageTriage",
